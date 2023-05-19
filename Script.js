@@ -44,3 +44,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function openContactForm() {
+    var contactContainer = document.getElementById('contactContainer');
+    contactContainer.classList.add('active');
+}
+
+function closeContactForm() {
+    var contactContainer = document.getElementById('contactContainer');
+    contactContainer.classList.remove('active');
+}
