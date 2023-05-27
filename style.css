@@ -73,6 +73,9 @@ h1{
     color: black;
 }
 
+h2{
+    font-size: 1.75vmax;
+}
 h3{
     font-size: 1.3vmax;
 }
