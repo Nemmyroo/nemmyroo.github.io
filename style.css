@@ -74,7 +74,7 @@ h1{
 }
 
 h2{
-    font-size: 1.5vmax;
+    font-size: 1.75vmax;
 }
 h3{
     font-size: 1.3vmax;
@@ -322,8 +322,8 @@ nav{
     text-align: center;
     align-content: center;
     justify-content: space-evenly;
+    margin-right: 40%;
     margin-top: 5%;
-    margin-right: 50%;
     font-size: 30px;
 }
 
@@ -381,20 +381,20 @@ nav{
 }
 
 .box_look{
-    padding: 20px;
+    padding: 0 20px 0 20px;
     border-radius: 15px;
-    height: auto;
-    width: 225px;
+    height: 80px;
+    max-width: 225px;
     background-color: white;
     text-align: left;
     box-shadow: 2px 2px 20px rgba(195, 195, 195);
+    text-align: center;
+    overflow: hidden;
+    transition: height 0.6s ease-out;
 }
 
 .box_look:hover{
-    background-color: #0145e4;
-    color: white;
-    box-shadow: 2px 2px 20px rgba(195, 195, 195);
-    animation: float2 4s ease-in-out infinite;
+    height: 250px;
 }
 
 @keyframes float2 {
@@ -530,7 +530,7 @@ nav{
 .demo{
     text-align: center;
     color: white;
-    background-image: url(images/banner.png);
+    background-image: url(images/demo_banner.png);
     background-size: cover;
     background-position: center;
     padding: 8% 5%;
