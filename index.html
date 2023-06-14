@@ -1,714 +1,456 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Class Chat Website Design</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="Script.js"></script>
     
-}
-
-html{
-    scroll-behavior: smooth;
-}
-.header{
-    width: 100%;
-    background: transparent;
-    background-position: center;
-    background-size: contain;
-    padding-bottom: 2%;
-}
-strong{
-    color: black;
-}
-
-@media only screen and (max-width: 1035px) {
-    .phone img {
-        display: none;
-    }
-    .classroom img {
-        display: none;
-    }
-    .tab-align img {
-        display: none;
-    }
-    .sign_up img {
-        display: none;
-    }
-    .sign_img img {
-        display: none;
-    }
-    .review {
-        display: none;
-    }
-    .part{
-        display: none;
-        width: 0;
-        height: 0;
-    }
-    .big{
-        width: 125px;
-        height: 125px;
-    }
-    .partners2{
-        margin: 7% 15% 0 15%;
-    }
-    .contact-container{
-        margin: 0 10%;
-    }
-    .header{
-        background-color: #0145e4;
-    }
-    .intro {
-        background: white;
-    }
-}
-
-a{
-    text-decoration: none;
-}
-
-h1{
-    font-size: 2.5vmax;
-}
-
-h2{
-    font-size: 1.75vmax;
-}
-
-h3{
-    font-size: 1.3vmax;
-}
-
-h4{
-    font-size: 1.2vmax;
-    color: #696362;
-}
-
-h5{
-    font-size: 1vmax;
-}
-
-p{
-    font-size: 1vmax;
-}
-img{
-    border-radius: 30px;
-}
-.justify{
-    text-align: justify;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
-    text-align: center;
-}
-.shadow{
-    box-shadow: 4px 4px 20px rgba(185, 185, 185);
-}
-
-.button{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 15px;
-    font-size: 3vmax;
-    background: #0145e4;
-    position: relative;
-    cursor: pointer;
-    max-width: 100%;
-}
-
-.button_2{
-    background-color: white;
-    border-style: solid;
-    border-color: white;
-    border-radius: 4px;
-    padding: 8px 25px;
-    text-align: center;
-    color: #0145e4;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5vmax;
-    margin: 10px;
-    border-width: 1.5px;
-    cursor: pointer;
-}
-
-.button_3{
-    background-color: #0145e4;
-    border-style: solid;
-    border-color: #0145e4;
-    border-radius: 4px;
-    padding: 8px 30px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5vmax;
-    margin: 10px;
-    border-width: 1.5px;
-    cursor: pointer;
-    box-shadow: 1px 1px 20px rgba(185, 185, 185);
-}
-
-.button_2:hover{
-    border: 1.5px solid #0145e4;
-    background: #0145e4;
-    color: white;
-    transition: 0.75s;
-    box-shadow: 1px 1px 20px rgba(160, 160, 160);
-}
-.button_3:hover{
-    border: 1.5px solid #0145e4;
-    background: white;
-    color: #0145e4;
-    transition: 0.75s;
-}
-.head_back{
-    background-image: url(images/background_cut.png); background-size: cover;
-}
-nav{
-    display: flex;
-    padding: 2% 2% 0 8%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-}
-
-.nav-links{
-    flex: 1;
-    margin-left: 25%;
-    text-align: right;
-}
-
-.nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 50px;
-    position: relative;
-}
-
-.nav-links ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.6vmax;
-}
-
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: white;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.nav-links ul li:hover::after{
-    width: 90%;
-}
-
-.text_learn{
-    padding-top: 13%;
-    display: flex;
-    text-align: justify;
-    align-content: center;
-    justify-content: space-evenly;
-    column-gap: 10%;
-    margin-top: -5%;
-}
-
-.text-box{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 60px;
-    position: relative;
-
-}
-
-.phone img{
-    width:"100%";
-    height: auto;
-    margin-top: -9%;
-    overflow: hidden;
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-	img { width: 100%; height: auto; }
-}
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-40px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
-.about{
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    margin-top: 8%;
-    column-gap: 5%;
-}
-
-.class_text{
-    width: 30%;
-    padding-right: 20px;
-
-}
-
-.classroom{
-    border: 0px solid #fff;
-    border-radius: 40px;
-    box-shadow: 4px 4px 20px rgba(195, 195, 195);
-    margin: -5% 0 0 5%;
-}
-
-
-.tab {
-    overflow: hidden;
-    display: block;
-    border: 0px solid #ccc;
-    align-content: center;
-    justify-content: space-evenly;
-    text-align: center;
-    margin: 0 5%;
-}
-
-.tab button {
-    justify-content: space-evenly;
-    column-gap: 20%;
-    background-color: inherit;
-    border: none;
-    outline: none;
-    cursor: pointer;    
-    padding: 14px 16px;
-    transition: 0.5s;
-    font-size: 2vmax;
-    border-style: solid;
-    border-width: 0 0 5px 0 ;
-    border-color: transparent transparent gray transparent;
-    border-radius: 30px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+</head>
+<body onload="openTab(event, 'tab1'); currentSlide(1)">
+<section class="head_back">
+<section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" height="40%" width ="40%" style="border-radius: 0"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">Integrations</a></li>
+                    <li><a href="">Resources</a></li>
+                    <li><a href="">Get A Demo</a></li>
+                </ul>
+                    <a id="demo"></a>
+            </div>
+        </nav>
+</section>
+<section class="intro">
+<div class="text_learn">
+<div class="text-box">
+    <h1>Modernize your school's<br>community!</h1>
+    <br>
+    <h4>Seamless, secure, organized communication for all.</h4>
+    <br>
+    <ul>
+        <a href="#our_product"><button class ="button_2">Learn more!</button></a>
+        <a href=""><button class="button_3">Get a Demo</button></a>
+    </ul>
+</div>
     
-}
+<div class="phone" class="floating">
+    <img src="images/phone_view.png" width="600" height="auto" >
+</div>  
+</div>
+    <br><br><br>
+</section>
+</section>
+<br><br><br>
+<section class="about"> <!-- About section-->
+<div class="classroom">
+    <img src="images/phone_class.png" width="600px" height="auto" style="margin-bottom: -4px">
+</div>
+<div class="class_text">
+    <h1>Communication that empowers and connects schools.</h1>
+    <br>
+    <h4><strong>At Class Chat, we believe in <u>simple</u>.</strong></h4>
+    <br>
+    <p class="justify">Class Chat provides two-way, full messeging peer-peer communications, to increase social intelligence, academic engagement, and more!</p>
+    <br><br>
+    <p><em>Sign in with your school email and password, and you're done</em></p><br>
+    <a href=""><button class="button_2">About</button></a>
+</div>
+</section>
+<br><br><br><br><br><br><br><br><br><br>
+<section> <!-- Product design for different parties-->
+    <a id="our_product"></a>
+    <h1 style="text-align: center">Mutual benefits for all parties!</h1>
+    <br><br><br>
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'tab1')" style="margin-right: 10%">Students</button>
+    <button class="tablinks" onclick="openTab(event, 'tab2')" style="margin-right: 10%">Teachers</button>
+    <button class="tablinks" onclick="openTab(event, 'tab3')" style="margin-right: 10%">Administrators</button>
+    <button class="tablinks" onclick="openTab(event, 'tab4')" >Parents</button>
+</div>
 
-.tab button:hover {
-    background-color: #0145e4;
-    color: white;
-    border-bottom-width: medium;
-    border-bottom-color: #0145e4;
-    box-shadow: 1px 1px 25px rgba(185, 185, 185);
-}
+<div id="tab1" class="tabcontent">
+    <h3><u>Students</u></h3>
+    <br>
+    <p>Chat with your classmates and teachers!</p>
+    <br>
+    <div class="tab-align">
+    <ul class="bullet">
+        <li class="point">This is demo text since you did not give me the info for this section :P</li><br>
+        <li class="point">Some more random text that will hopefully bechanged if you decide to give me the info.</li><br>
+        <li class="point">Don't really know how much text you want to put here... I could do research and give a rough draft but that's a lot of work imo...</li>
+    </ul>
+        <img src="images/person_demo_t.png" class="shadow" height="auto" width="500px" style="margin-top: -6.5%">
+    </div>
+</div>
 
-.tab button.active {
-    background-color: white;
-    border-bottom-width: 5px;
-    border-bottom-color: #0145e4;
-    color: #0145e4;
-    font-size: 2.3vmax;
-    box-shadow: 1px 1px 10px rgba(185, 185, 185);
-}
+<div id="tab2" class="tabcontent">
+    <h3><u>Teachers</u></h3>
+    <br>
+    <p>Chat with your students and their parents!</p>
+    <div class="tab-align">
+    <ul class="bullet">
+        <br>
+        <li class="point">All your classes and communications are automatically joined through one google sign in. <strong> In three clicks or less.</strong></li>
+        <br class="point">
+        <li class="point">All your <strong><u>students</u></strong> and <strong><u>parents</u></strong> are easily and securely reachable!</li>
+        <br>
+        <li class="point">All class communications becomes manageable through one platform, no more text/email spam!</li>
+    </ul>
+        <img src="images/person_demo_t.png" class="shadow" height="auto" width="500px" style="margin-top: -4%">
+</div>
+</div>
+<div id="tab3" class="tabcontent">
+    <h3><u>Administrators</u></h3>
+    <br>
+  <p>Whatever Admistrators do!</p>
+    <br>
+    <div class="tab-align">
+        <ul class="bullet">
+            <li class="point">Administrator do things?</li>
+            <br>
+            <li class="point">Once again just setting filler text till I recieve an outline on what to put.</li>
+            <br>
+            <li class="point">This is easy to change anyways, no need to try and make it myself I guess. But want to make it a good demo, so input random text I go.</li>
+        </ul>
+        <img src="images/person_demo_t.png" class="shadow" height="auto" width ="500px" style="margin-top: -6.5%">
+    </div>
+</div>
+<div id="tab4" class="tabcontent">
+    <h3><u>Parents</u></h3><br>
+    <p>Monitor your childs work and <br>communicate with their teachers!</p>
+    <br>
+    <div class="tab-align">
+        <ul class="bullet">
+            <li class="point">Lets get the parents envolved lol</li>
+            <br>
+            <li class="point">Once again just setting filler text till I recieve an outline on what to put.</li>
+            <br>
+            <li class="point">This is easy to change anyways, no need to try and make it myself I guess. But want to make it a good demo, so input random text I go.</li>
+        </ul>
+        <img src="images/person_demo_t.png" class="shadow" height="auto" width ="500px" style="margin-top: -7.5%">
+    </div>
+</div>
+    <br><br><br><br><br><br><br><br>
+</section>
+<section> <!-- Sign up process -->
+    <a id="login_process"></a>
+    <img src="images/placeholder.png" height="40px" width ="40px" class="center">
+<div class="sign_up">
+    <br>
+    <h1>Sign up to Class Chat</h1><br>
+    <p><u>___________________________</u></p><br>
+    <p>Class Chat offers a  streamlined sign up process<br> for new users. No manual account creations,<br>class codes, link sign ups, or outsiders.</p>
+    <br><p><u>______________</u></p>
+</div>
+<div class ="sign_up_side">
+    <div class="sign_img">
+        <img src="images/sign_in.png" class="shadow" height="600px" width="300px" style="margin-top: -35%">
+    </div>
+<div class ="create">
+    <h1 style="font-size: 40px"><u>Sign up with your email</u></h1><br>
+    <p><u>___________</u></p><br>
+    <p class="justify" style="font-size: 20px">Putting some filler information once again due to the fact that you have not completed this section of the website. I will be repeating this text in the meantime until you give me the information I need.</p>
+</div>    
+</div>
+    <br><br><br><br>
+    <p class="break"><u>__________________________________________</u></p>
+<div class="sign_up_side">
+<div class ="create">
+    <h1 style="font-size: 40px"><u>Access all your classes</u></h1><br>
+    <p><u>___________</u></p><br>
+    <p class="justify" style="font-size: 20px">Putting some filler information once again due to the fact that you have not completed this section of the website. I will be repeating this text in the meantime until you give me the information I need.</p>
+    <br><br>
+    <img src="images/Chatbubbles.png" height="125px" width="125px" class="shadow">
+</div>
+    <div class="sign_img">
+        <img src="images/home_screen.png" class="shadow" height="650px" width="300px" style="margin-top: -35%">
+    </div>
+</div>
+    <br><br><br><br>
+</section>
 
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 0px solid #ccc;
-    border-top: none;
-    display: flex;
-    text-align: center;
-    align-content: center;
-    justify-content: space-evenly;
-    margin-right: 40%;
-    margin-top: 5%;
-    font-size: 30px;
-    
-}
+<section> <!-- Bunch of boxes for features -->
+    <br><br><br><br><br><br>
+    <div class="text_features">
+        <img src="images/placeholder.png" class="center" height="75px" width="75px">
+        <br>
+        <h1>Less trouble and more features!</h1>
+        <br><p><u>__________</u></p><br>
+        <p style="font-size: 20px">Class chat provides many features to make<br>your life easier.<br>Hover over each icon to see more!</p>
+        <br>
+        <div class="box">
+            <div class=box_look>
+                <br>
+                <img src="images/Icons-rectangle.png" height="50px" width="50px"><br><br>
+                <h3>LMS + SIS Intergration</h3>
+                <br>
+                <h5>Both systems combined provide <blue>end to end management infrastructure</blue> for schools and district.</h5>
+            </div>
+            <div class=box_look>
+                <br>
+                <img src="images/Icons-people.png" height="50px" width="50px"><br><br>
+                <h3>Automatic Rostering</h3>
+                <br>
+                <h5>Our login process allows for anyone to be <blue>easily and securely</blue> onboarded.</h5>
+            </div>
+            <div class=box_look>
+                <br>
+                <img src="images/Icons-clock.png" height="50px" width="50px"><br><br>
+                <h3>Saves Time</h3>
+                <br>
+                <h5>Logging into Class Chat takes <blue>less than 10 seconds</blue> and doesn't <blue>require any account creation</blue>.</h5>
+            </div>
+        </div>
+        <div class="box">
+            <div class=box_look>
+                <br>
+                <img src="images/Icons-google.png" height="50px" width="50px"><br><br>
+                <h3>Google API</h3>
+                <br>
+                <h5>Google API is utilized in Class Chat for <blue>easy file sharing and previews</blue>.</h5>
+            </div>
+            <div class=box_look>
+                <br>
+                <img src="images/Icons-lock.png" height="50px" width="50px"><br><br>
+                <h3>Security Notifications</h3>
+                <br>
+                <h5>Multiple authentications occuring alleviate the <blue>worry of hackers, data breaches, and outsiders</blue> from disrupting functions.</h5>
+            </div>  
+            <div class=box_look>
+                <br>
+                <img src="images/Icons-plan.png" height="50px" width="50px"><br><br>
+                <h3>Moderation Features</h3>
+                <br>
+                <h5><u>You did not add any info here! <blue>MAKE SURE TO CHANGE THIS TEXT! DO NOT FORGET!</blue></u></h5>
+                
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </div>
+</section>
+<section> <!-- Partnered schools -->
+    <div class="partners">
+        <div style="padding: 0 15% 0 5%">
+        <a id="testimonials"></a>
+        <h1>Our Partners</h1>
+        <p><u>__________</u></p><br>
+        <p>We provide our services to numerous<br>school, districts, and buisnesses.</p>
+        <br><br>
+        <a href=""><button class="button_2" style="margin-left: -5px">See our full list of partners!</button></a>
+        </div>
+        <marquee width="400px" scrolldelay="70" truespeed>
+            <img src="images/logo.png" width="125px" height="125px" class="part" >
+            <img src="images/logo.png" width="125px" height="125px" class="part" >
+            <img src="images/placeholder.png" width="125px" height="125px" class="part" >
+            <img src="images/placeholder.png" width="125px" height="125px" class="part" >
+            <img src="images/placeholder.png" width="125px" height="125px" class="part" >
+            <img src="images/placeholder.png" width="125px" height="125px" class="part" >
+            <img src="images/placeholder.png" width="125px" height="125px" class="part" >
+        </marquee>
+    </div>
+    <div class="partners2">
+         <marquee width="400px" scrolldelay="50" truespeed>
+            <img src="images/logo.png" width="0" height="0" class="big" >
+            <img src="images/logo.png" width="0" height="0" class="big" >
+            <img src="images/placeholder.png" width="0" height="0" class="big" >
+            <img src="images/placeholder.png" width="0" height="0" class="big" >
+            <img src="images/placeholder.png" width="0" height="0" class="big" >
+            <img src="images/placeholder.png" width="0" height="0" class="big" >
+            <img src="images/placeholder.png" width="0" height="0" class="big" >
+        </marquee>
+    </div>
+    <br><br><br><br>
+</section>
+    <!-- Reviews -->
+<section class="review" style="padding: 5%">
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <div class="text">
+            <div>
+                <img src="images/placeholder.png" width="250px" height ="250px" style="margin: 65% 0 0 10%">
+            </div>
+            <div>
+                <br>
+                <h2>"This app allows our teachers and students to collaborate through our student managemnet system and communicate with one another based on their class schedule. This has proven beneficial during the ongoing pandemic"</h2>
+                <br><br><br>
+                <h2><strong>Dr. Kevin Hodgeson</strong></h2>
+                <h2>Former Head Principal at Cypress High School - Academic Agent: Special Programs, Rialto Unified School District</h2>
+            </div>
+        </div>
+    </div>
 
-.bullet{
-    padding: 0;
-    margin: 0 15%;
-    list-style-type: none;
-    width: 35%;
-    text-align: justify;
-}
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <div class="text">
+            <div>
+                <img src="images/placeholder.png" width="250px" height ="250px" style="margin: 35% 0 0 10%">
+            </div>
+            <div>
+                <h2>The app itself is very useful. If only the person who created the company would give me actual information that I could use to creat the demo! That would make everything a lot easier for me as well...</h2>
+                <br><br><br>
+                <h2><strong>Damian Figueroa</strong></h2>
+                <h2>Just the dude helping create a new info site for his bud. Don't know what else to put so ://</h2>
+            </div>
+        </div>
+    </div>
 
-.point{
-    margin: 0 -30px 0 30px;
-    font-size: 1.3vmax;
-    color: #828282;
-    text-align: justify;
-}
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <div class="text">
+            <div>
+                <img src="images/placeholder.png" width="250px" height ="250px" style="margin: 35% 0 0 10%">
+            </div>
+            <div>
+                <h2>apiuvae aveurvauivr ivubsubs soeuvraouvn valjnae vraeoieoif aerjotbnob dibso srt odnfbnf bsibous bsojnbouzs vtnhois soouhana reognob s aoisdvjouer voernrev soapfkb psfmeioadv oir aoenvfajv rjgna vlaj </h2>
+                <br><br><br>
+                <h2><strong>SJACBASBAADJV</strong></h2>
+                <h2>oasfnosd aorngao variosnv arngoanvr vaerjuvf a rnj b jasdaounr  rjbnfjb jafv kfjnbaounbadf jbjanfdoboabn</h2>
+            </div>
+        </div>
+    </div>
+<!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
-.tab-align{
-    display: flex;
-    text-align: center;
-    align-content: center;
-    justify-content: space-evenly;
-    margin-right: -50%;
-    column-gap: 3%;
-}
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>    
+</section>
 
-.sign_up{
-    text-align: center;
-}
-.create{
-    width: 30%;
-}
+<section class="demo">
+    <h1 style="color: white"><u>Schedule a Demo!</u></h1><br><br>
+    <p style="font-size: 20px">Replace outdated mass notifications with real-time,<br>personalized communication, by bringing Class Chat<br>to your school or district.</p>
+    <br><br>
+    <a href="#contactContainer"><button class="button_demo" onclick="openContactForm()">Get a Demo</button></a>
+    <br><br>
+</section>
+<section style="text-align: center">
+    <div id="contactContainer" class="contact-container" style="background-color: transparent; justify-content: center">
+        <form class="contact-form" style="background-color: transparent; justify-content: center">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="company" placeholder="Company Name(Optional)">
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" class="message" placeholder="Message" required></textarea>
+            <button class="submit" type="submit">Submit</button>
+        </form>
+        <br>
+        <br>
+        <p><button class="close-button" onclick="closeContactForm()">Close form</button></p>
+  </div>
+</section>
+<section>  <!-- FAQ drop down tabs -->
+    <div class="faq">
+        <div>
+            <img src="images/placeholder.png" height="75px" width="75px">
+            <br><br>
+            <h1>Frequently Asked<br>Questions.</h1>
+            <br><br>
+            <h3>Have any questions? Contact us with the link above!</h3>
+        </div>
+        <div>
+            <button class="collapsible">What is Class Chat?</button>
+            <div class="content">
+                <a id="faq"></a>
+                <br>
+                <p><strong>Once again this is not the current information. Instead I am providing filler text so that I we can see how the site may look like. I shall be repeating this section of text because I don't want to set 5 different bundles of text. This is an easy fix especially if I get the ability to just copy and paste the text.</strong></p>
+                <br>
+            </div>
+            <button class="collapsible">Will I be locked in a contract?</button>
+            <div class="content">
+                <br>
+                <p><strong>Once again this is not the current information. Instead I am providing filler text so that I we can see how the site may look like. I shall be repeating this section of text because I don't want to set 5 different bundles of text. This is an easy fix especially if I get the ability to just copy and paste the text.</strong></p>
+                <br>
+            </div>
+            <button class="collapsible">How easy is it for students/teachers to use?</button>
+            <div class="content">
+                <br>
+                <p><strong>Once again this is not the current information. Instead I am providing filler text so that I we can see how the site may look like. I shall be repeating this section of text because I don't want to set 5 different bundles of text. This is an easy fix especially if I get the ability to just copy and paste the text.</strong></p>
+                <br>
+            </div>
+            <button class="collapsible">What can teachers do with Class Chat?</button>
+            <div class="content">
+                <br>
+                <p><strong>Once again this is not the current information. Instead I am providing filler text so that I we can see how the site may look like. I shall be repeating this section of text because I don't want to set 5 different bundles of text. This is an easy fix especially if I get the ability to just copy and paste the text.</strong></p>
+                <br>
+            </div>
+            <button class="collapsible">Does Class Chat work with private schools?</button>
+            <div class="content">
+                <br>
+                <p><strong>Once again this is not the current information. Instead I am providing filler text so that I we can see how the site may look like. I shall be repeating this section of text because I don't want to set 5 different bundles of text. This is an easy fix especially if I get the ability to just copy and paste the text.</strong></p>
+                <br>
+            </div>
+        </div>
+<!-- for some reason it wouldn't work in the JavaScript section but would work on html sechion :// -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-.sign_img{
-    width:"100%";
-    height: auto;
-    margin-top: -2%;
-	transform: translatey(0px);
-	animation: float2 7s ease-in-out infinite;
-	img { width: 100%; height: auto; }
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
 }
-
-@keyframes float2 {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-15px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
-.sign_up_side{
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    margin: 15% 10% 0 10%;
-}
-
-.break{
-    text-align: center; 
-    font-size: 25px;
-    color: #0145e4;
-}
-
-.text_features{
-    display: block;
-    text-align: center;
-    padding: 0;
-    
-}
-
-.box{
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    padding: 2% 22% 0 22%;
-    /*margin: 5% 10%; */
-}
-
-.box_look{
-    padding: 0 20px 20px 20px;
-    border-radius: 15px;
-    height: auto;
-    max-width: 225px;
-    background-color: white;
-    text-align: left;
-    box-shadow: 2px 2px 20px rgba(195, 195, 195);
-    text-align: center;
-    transition: all 0.8s ease-out;
-}
-.box_look:hover{
-    transform: scale(1.1)
-}
-
-blue{
-    color: #0145e4;
-}
-
-
-.partners{
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    margin: 7% 15% 0 15%;
-}
-.partners2{
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-}
-
-
-/* Slideshow container */
-.slideshow-container {
-    width: 1200px;
-    height: 600px;
-    position: relative;
-    margin: auto;
-    border: 1px solid white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 25px rgba(185, 185, 185);
-    overflow: hidden;
-    
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 1.5vmax;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(1,69,228,0.7);
-    color: white;
-}
-
-/* Caption text */
-.text {
-    color: black;
-    font-size: 1.75vmax;
-    padding: 0 12px;
-    position: absolute;
-    bottom: 18%;
-    width: 95%;
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    column-gap: 10%;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #0145e4;
-    font-size: .7vmax;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-.fade {
-    animation-name: slide;
-    animation-duration: 1s;
-}
-
-@keyframes slide {
-    from {
-        margin-left: 60%;
-        width: 300%;
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
-.demo{
-    text-align: center;
-    color: white;
-    background-image: url(images/demo_banner.png);
-    background-size: cover;
-    background-position: center;
-    padding: 8% 5%;
-}
-.button_demo{
-    width: 200px;
-    height: 60px;
-    font-size: 1.5vmax;
-    background-color: #0145e4;
-    color: white;
-    border: 2px solid white;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 4px 4px 10px black;
-}
-
-.contact-container {
-    position: flex;
-    padding: 40px;
-    display: none;
-    background-color: white;
-    margin: 0 30%;
-}
-    
-.contact-container.active {
-    display: block;
-}
-    
-.contact-form input, .contact-form textarea {
-    display: flex;
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 5px;
-    
-    
-}
-.contact-form{
-    background-color: white;
-}
-.close-button {
-    position: flex;
-    font-size: 1.3vmax;
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
-    font-size: 15px;
-    background-color: white;
-    border: 2px solid #0145e4;
-    border-radius: 10px;
-    color: #0145e4;
-}
-.submit{
-    width: 200px;
-    height: 60px;
-    font-size: 1.7vmax;
-    background-color: white;
-    border: 2px solid #0145e4;
-    border-radius: 10px;
-    color: #0145e4;
-    cursor: pointer;
-}
-.message{
-    width: 100% ;
-    height: 100px;
-    color: black;
-    border: 2px solid #0145e4;
-    border-radius: 10px;
-    padding: 5px;
-    font-size: 1.3vmax;
-}
-
-input{
-    width: 400px;
-    height: 50px;
-    font-size: 22px;
-    background-color: white;
-    color: black;
-    border: 3px solid #0145e4;
-    border-radius: 10px;
-}
-
-.collapsible {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    height: auto;
-    border: none;
-    border-radius: 5px;
-    text-align: left;
-    outline: none;
-    font-size: 1.5vmax;
-    margin: 10px 0 5px -50px;
-    box-shadow: 2px 2px 20px rgba(195, 195, 195)
-}
-
-.active, .collapsible:hover {
-    background-color: #0145e4;
-    color: white;
-}
-
-.collapsible:after {
-    content: '\002B';
-    color: #0145e4;
-    font-weight: bold;
-    float: right;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.active:after {
-    color: white;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.content {
-    width: 100%; 
-    height: auto;
-    padding-left:  0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: white;
-    margin-bottom: 5px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 20px rgba(195, 195, 195);
-    margin: 10px 0 5px -50px;
-}
-
-.faq{
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    margin: 10% 4% 10% 18%;
-    column-gap: 23%;
-}
-
-.bottom_nav{
-    background: #171717;
-    color: white;
-    border-radius: 0;
-    padding: 60px;
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-}
-
-.link{
-    color: white;
-    text-decoration: none;
-    
-}
-
-.copy{
-    background: black;
-    color: white;
-    display: flex;
-    column-gap: 60%;
-    padding: 40px 50px;
-    border-top: 1px solid #d4d4d4
-}
+</script>
+    </div>
+</section>
+<section class="bottom_nav">  <!-- Link Navigation at the bottom of the page-->
+    <div>
+        <a href=""><img src="images/logo.png" width="100px" height="100px" style="border-radius: 0"></a>
+    </div>
+    <div class="link">
+        <h2>Homepage</h2>
+        <br><br><br>
+            <a href="#demo" class="link">Demo</a><br><br>
+            <a href="#our_product" class="link">Our Product</a><br><br>
+            <a href="#login_process" class="link">Login Process</a><br><br>
+            <a href="#testimonials" class="link">Testimonials</a><br><br>
+    </div>
+    <div class="link">
+        <h2>About</h2>
+        <br><br><br>
+            <a href="" class="link">About us</a><br><br>
+            <a href="" class="link">Teachers</a><br><br>
+            <a href="" class="link">Students</a><br><br>
+            <a href="" class="link">Parents</a><br><br>
+    </div>
+    <div class="link">
+        <h2>Support</h2>
+        <br><br><br>
+            <a href="" class="link">Privacy Policy</a><br><br>
+            <a href="" class="link">Responisble Disclosure</a><br><br>
+            <a href="" class="link">Terms & Conditions</a><br><br>
+            <a href="" class="link">Contact Us</a><br><br>
+    </div>
+</section>
+<section>
+    <div class="copy">
+    <div>
+        <p style="color: black">Created by Damian Figueroa :)</p>
+        <p>Copyright &copy; 2023 Class Chat Inc. All rights reserved.</p>
+    </div>
+    <div >
+        <a href="" class="link">Terms & Conditions</a><br><br>
+        <a href="" class="link">Privacy Policy</a>
+    </div>
+    </div>
+</section>
+</body>
+</html>
