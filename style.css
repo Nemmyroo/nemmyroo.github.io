@@ -84,6 +84,7 @@ h4{
 
 h5{
     font-size: 1vmax;
+    font-style: none;
 }
 
 p{
@@ -669,17 +670,18 @@ input{
 }
 
 .content {
-    width: 100%; 
+    width: 96%; 
     height: auto;
     padding-left:  0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: white;
-    margin-bottom: 5px;
     border-radius: 20px;
     box-shadow: 2px 2px 20px rgba(195, 195, 195);
-    margin: 10px 0 5px -50px;
+    margin: 10px 0 10px -50px;
+    text-align: justify;
+    padding: 0 2%;
 }
 
 .faq{
