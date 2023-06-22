@@ -10,11 +10,9 @@ html{
 }
 .header{
     width: 100%;
-    background: transparent;
-    background-position: center;
-    background-size: contain;
     padding-bottom: 2%;
 }
+
 strong{
     color: black;
 }
@@ -84,7 +82,7 @@ h4{
 
 h5{
     font-size: 1vmax;
-    font-style: none;
+    font-weight: 100;
 }
 
 p{
@@ -165,7 +163,11 @@ img{
     transition: 0.75s;
 }
 .head_back{
-    background-image: url(images/background_cut.png); background-size: cover;
+    background-image: url(images/background_cut.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
 }
 nav{
     display: flex;
@@ -175,10 +177,12 @@ nav{
     background-color: transparent;
 }
 
+
 .nav-links{
     flex: 1;
-    margin-left: 25%;
+    margin-left: -11%;
     text-align: right;
+    padding: 2.5% 0;
 }
 
 .nav-links ul li{
@@ -206,6 +210,24 @@ nav{
 
 .nav-links ul li:hover::after{
     width: 90%;
+}
+
+.scale{
+    overflow: hidden;
+    transition: transform 1s ease-out;
+}
+.scale:hover{
+    transform: scale(1.05);
+}
+
+.scale2{
+    overflow: hidden;
+    transition: transform 1s ease-out;
+    box-shadow: 4px 4px 10px rgba(195, 195, 195);
+}
+.scale2:hover{
+    transform: scale(1.01);
+    box-shadow: 4px 4px 10px rgba(195, 195, 195);
 }
 
 .text_learn{
@@ -265,7 +287,6 @@ nav{
 .classroom{
     border: 0px solid #fff;
     border-radius: 40px;
-    box-shadow: 4px 4px 20px rgba(195, 195, 195);
 
 }
 
@@ -293,7 +314,7 @@ nav{
     border-style: solid;
     border-width: 0 0 5px 0 ;
     border-color: transparent transparent gray transparent;
-    border-radius: 30px;
+    border-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     margin-top: 5px;
@@ -344,7 +365,6 @@ nav{
 .point{
     margin: 0 -30px 0 30px;
     font-size: 1.3vmax;
-    color: #828282;
     text-align: justify;
 }
 
@@ -439,12 +459,6 @@ blue{
     justify-content: space-evenly;
     margin: 7% 15% 0 15%;
 }
-.partners2{
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-}
-
 
 /* Slideshow container */
 .slideshow-container {
@@ -456,7 +470,29 @@ blue{
     border-radius: 10px;
     box-shadow: 5px 5px 25px rgba(185, 185, 185);
     overflow: hidden;
-    
+}
+.slideshow-container2 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px rgba(185, 185, 185);
+    overflow: hidden;
+}
+
+.images {
+    color: black;
+    font-size: 1.75vmax;
+    padding: 0 12px;
+    position: absolute;
+    bottom: 18%;
+    width: 95%;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    column-gap: 10%;
 }
 
 /* Hide the images by default */
@@ -464,8 +500,26 @@ blue{
     display: none;
 }
 
+.mySlides2 {
+    display: none;
+}
+
 /* Next & previous buttons */
 .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5vmax;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev2, .next2 {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -485,11 +539,17 @@ blue{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
     background-color: rgba(1,69,228,0.7);
     color: white;
+}
+.prev2:hover, .next2:hover {
+    color: rgba(1,69,228,0.7);
 }
 
 /* Caption text */
