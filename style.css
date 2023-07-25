@@ -67,27 +67,19 @@ h1{
     font-size: 2.5vmax;
 }
 
+
 h2{
     font-size: 1.75vmax;
 }
 
-h3{
-    font-size: 1.3vmax;
-}
-
 h4{
-    font-size: 1.2vmax;
     font-weight: 100;
 }
 
 h5{
-    font-size: 1vmax;
     font-weight: 100;
 }
 
-p{
-    font-size: 1vmax;
-}
 img{
     border-radius: 30px;
 }
@@ -142,7 +134,6 @@ img{
     padding: 0.75em 1.25em;
     border: none;
     border-radius: 5px;
-    letter-spacing: 5px;
     color: #0145e4;
     transition: all 1000ms;
     font-size: 1.25vmax;
@@ -257,22 +248,22 @@ nav{
     justify-content: space-evenly;
     column-gap: 10%;
     margin-top: -5%;
-    margin-right: -35%;
 }
 
 .text-box{
     list-style: none;
     display: inline-block;
-    padding: 8px 60px;
+    padding: 5% 4% 5% 5%;
     position: relative;
-    margin-right: -15%;
+    width: 90%;
+    margin-top: -5%;
+    
 }
 
 .phone img{
-    width: 45%;
+    width: 90%;
     height: auto;
     margin-top: -5%;
-    margin-left: 10%;
     overflow: hidden;
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
@@ -299,15 +290,15 @@ nav{
 }
 
 .class_text{
-    width: 45%;
-    padding-right: 20px;
-    
+    width: 70%;
+    margin-right: 5%;
 }
 
 .classroom{
     border: 0px solid #fff;
     border-radius: 40px;
-    margin: -5% -30% -4% 8%;
+    margin-left: 6%;
+    margin-top: -2%;
 }
 
 
@@ -400,8 +391,10 @@ nav{
 .sign_up{
     text-align: center;
 }
+
 .create{
-    width: 30%;
+    width: 40%;
+    font-size: 1.5vmax;
 }
 
 .sign_img{
@@ -479,6 +472,14 @@ blue{
     align-content: center;
     justify-content: space-evenly;
     margin: 7% 5% 0 10%;
+    overflow: hidden;
+}
+
+.category{
+    text-align: center;
+    font-size: 3vmax;
+    letter-spacing: .3rem;
+    margin-top: 3%;
 }
 
 .carousel {
@@ -521,44 +522,28 @@ blue{
 /* Slideshow container */
 .slideshow-container {
     width: 85%;
-    height: 35em;
+    height: 37em;
     position: relative;
     margin: auto;
-    border: 1px solid white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 25px rgba(185, 185, 185);
     overflow: hidden;
 }
 
 .slideshow-container2 {
-    width: 125%;
-    height: 15em;
+    width: 150%;
+    height: 20em;
     position: relative;
     margin: auto;
     border: 1px solid white;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .side{
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-    column-gap: 10%;
+    column-gap: 5%;
 }
 
-.images {
-    color: black;
-    font-size: 1.75vmax;
-    padding: 0 12px;
-    position: absolute;
-    bottom: 18%;
-    width: 95%;
-    display: flex;
-    align-content: center;
-    justify-content: space-evenly;
-    column-gap: 10%;
-}
 
 /* Hide the images by default */
 .mySlides {
@@ -587,7 +572,7 @@ blue{
 .prev2, .next2 {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 66%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -606,7 +591,12 @@ blue{
 }
 
 .next2 {
-    right: 0;
+    right: 25%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev2 {
+    left: 22%;
     border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
@@ -717,7 +707,7 @@ blue{
     border-radius: inherit;
     background: linear-gradient(
     82.3deg,
-    #0145e4, 40.8%,
+    #70bdca, 40.8%,
     rgba(99, 88, 238, 1) 94.3%
   );
     transition: all 0.475s;
@@ -743,21 +733,46 @@ blue{
     
     
 }
+
 .contact-form{
     background-color: white;
 }
+
 .close-button {
-    position: flex;
-    font-size: 1.3vmax;
-    cursor: pointer;
-    width: 150px;
-    height: 50px;
-    font-size: 15px;
-    background-color: white;
-    border: 2px solid #0145e4;
-    border-radius: 10px;
-    color: #0145e4;
+    position: relative;
+    overflow: hidden;
+    height: 4rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    box-shadow: 2px 2px 40px #70bdca;
 }
+
+.close-button:hover::before {
+    transform: scaleX(1);
+}
+
+.close-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+    82.3deg,
+    rgba(99, 88, 238, 1) 20.8%,
+    #0145e4 94.3%
+  );
+    transition: all 0.475s;
+}
+
 .submit{
     width: 200px;
     height: 60px;
@@ -768,6 +783,42 @@ blue{
     color: #0145e4;
     cursor: pointer;
 }
+
+.submit {
+    position: relative;
+    overflow: hidden;
+    height: 4rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    box-shadow: 2px 2px 40px #70bdca;
+}
+
+.submit:hover::before {
+    transform: scaleX(1);
+}
+
+.submit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+    82.3deg,
+    #70bdca 20.8%,
+    #0145e4 94.3%
+  );
+    transition: all 0.475s;
+}
+
 .message{
     width: 100% ;
     height: 100px;
