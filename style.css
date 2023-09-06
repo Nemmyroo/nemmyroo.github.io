@@ -995,7 +995,7 @@ blue{
   border-radius: 5px;
 }
 
-.coolinput input[type=message].input {
+.coolinput input[type=textarea].input {
   padding: 2% 3%;
   font-size: 1rem;
   border: 2px #0145e4 solid;
@@ -1003,29 +1003,42 @@ blue{
     height: 10vmax;
 }
 
-.coolinput input[type=text].input:focus {
+.coolinput input[type=].input:focus {
   outline: none;
 }
 
+textarea{
+    border: 2px #0145e4 solid;
+    border-radius 20px;
+    height: 20%;
+    font-size: 1em;
+    padding: 3%;
+    margin-bottom: 5%; 
+}
 
 /* Send design */
 
 .send {
   font-family: inherit;
-  font-size: 1.2em;
-  background: royalblue;
+  font-size: 1.3em;
+    width: 25%;
+  background: #0145e4;
   color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
   align-items: center;
   border: none;
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.2s;
-    width: 20%;
+    justify-content: center;
+    margin: 0 37.5%;
 }
 
 .send span {
   display: block;
-  margin-left: 0.8em;
+  margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1033,6 +1046,7 @@ blue{
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
+    
 }
 
 .send:hover .svg-wrapper {
@@ -1061,7 +1075,6 @@ blue{
   }
 }
 
-
 .copy{
     background: black;
     color: white;
@@ -1086,6 +1099,7 @@ blue{
 @keyframes earthRotation {
   from {
     transform: rotate(0deg);
+      
   }
 
   to {
@@ -1095,11 +1109,11 @@ blue{
 
 @keyframes sunrise {
   0%, 10%, 90%, 100% {
-    box-shadow: 0 0 0 25px #5ad6bd, 0 0 0 40px #4acead, 0 0 0 60px rgba(74, 206, 173, 0.6), 0 0 0 90px rgba(74, 206, 173, 0.3);
+    box-shadow: 0 0 0 25px rgba(255, 238, 26, 0.8), 0 0 0 40px rgba(255, 209, 28, 0.8), 0 0 0 60px rgba(255, 195, 28, 0.6), 0 0 0 90px rgba(255, 153, 28, 0.3);
   }
 
   25%, 75% {
-    box-shadow: 0 0 0 0 #5ad6bd, 0 0 0 0 #4acead, 0 0 0 0 rgba(74, 206, 173, 0.6), 0 0 0 0 rgba(74, 206, 173, 0.3);
+    box-shadow: 0 0 0 0 rgba(255, 238, 26, 0.8), 0 0 0 0 rgba(255, 209, 28, 0.6), 0 0 0 0 rgba(255, 195, 28, 0.6), 0 0 0 0 rgba(255, 153, 28, 0.3);
   }
 }
 
@@ -1141,19 +1155,11 @@ blue{
   }
 }
 
-@keyframes heat {
-  0%, 90% {
-    box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0.3);
-  }
 
-  50%, 75% {
-    box-shadow: inset 0 -2px 0 0 white;
-  }
-}
 
 @keyframes smoke {
   0%, 50%, 90%, 100% {
-    opacity: 0;
+    opacity: 0.7;
   }
 
   50%, 75% {
@@ -1163,11 +1169,11 @@ blue{
 
 @keyframes fire {
   0%, 90%, 100% {
-    opacity: 0;
+    opacity: 1;
   }
 
   50%, 75% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -1241,6 +1247,15 @@ blue{
   }
 }
 
+@keyFrames backgroundColor {
+    0%, 10%, 90%, 100%{
+        background: rgba(74, 126, 255, 1);
+    }
+    40%,70%{
+        background: rgba(45, 54, 76, 1);
+    }
+}
+
 .scene {
   display: flex;
   justify-content: center;
@@ -1248,9 +1263,9 @@ blue{
   width: 90%;
   height: 60%;
   position: relative;
-    background-color: dimgray;
     border-radius: 30px;
     padding-bottom: 5%;
+    animation: backgroundColor 5s infinite linear;
 }
 
 .forest {
@@ -1275,6 +1290,7 @@ blue{
   padding-left: 40%;
   padding-bottom: 50%;
   overflow: hidden;
+  ;
 }
 
 .tree .branch:before {
@@ -1285,7 +1301,8 @@ blue{
   margin-left: -600px;
   border-left: 600px solid transparent;
   border-right: 600px solid transparent;
-  border-bottom: 950px solid #000;
+  border-bottom: 950px solid rgba(2, 72, 38, 1);
+    
 }
 
 .tree .branch.branch-top {
@@ -1558,15 +1575,18 @@ blue{
 }
 
 .floor {
-  width: 80%;
+  width: 100%;
   position: absolute;
-  right: 10%;
+    top: 92%;
   z-index: 1;
+    background: darkgreen;
+    height: 8%;
+      border-radius: 2px 2px 30px 30px;
 }
 
 .floor .ground {
   position: absolute;
-  border-radius: 2px;
+  border-radius: 2px 2px 30px 30px;
   border: 2px solid #4D4454;
 }
 
@@ -1645,6 +1665,8 @@ blue{
   height: 2px;
   border-radius: 2px;
   border: 2px solid #4D4454;
+    
+    
 }
 
 .fireplace .hanger {
