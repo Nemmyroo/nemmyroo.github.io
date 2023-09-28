@@ -9,34 +9,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <script src="Script.js"></script>
-    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 </head>
+    
 <body onload="openTab(event, 'tab1'); currentSlide(1); plusSlides2(1)">
 <section class="head_back">
 <section class="header">
         <nav>
             <a href="index.html" class="scale"><img src="images/logo.png" height="auto" width ="40%" style="border-radius: 0;"></a>
             <div class="nav-links">
+                <button></button>
                 <ul>
                     <li><a href="">Integrations</a></li>
                     <li><a href="">Resources</a></li>
-                    <li><a href="">Get A Demo</a></li>
+                    <li><a href="#demo" >Get A Demo</a></li>
                 </ul>
-                    <a id="demo"></a>
+                    
             </div>
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </nav>
 </section>
 <section class="intro">
 <div class="text_learn">
 <div class="text-box">
-    <br><br><br><br><br><br>
     <h1>Modernize your school's community!</h1>
     <br>
     <h4 style="font-size: 1.2vmax">Seamless, secure, organized communication for all.</h4>
     <br>
     <ul>
         <a href="#learn_more"><button class ="button_2">Learn more!</button></a>
-        <a href=""><button class="button_3">Get a Demo</button></a>
+        <a href="#demo"><button class="button_3">Get a Demo</button></a>
     </ul>
 </div>
     
@@ -69,7 +71,7 @@
         <br>
     </ul>
     </div>
-    <a href=""><button class="button_2">About</button></a>
+    <a href="about_us.html"><button class="button_2">About</button></a>
 </div>
 </section>
     <!--
@@ -187,8 +189,8 @@
     <p style="font-size: 1.4vmax;">Easily access your classes, and start chatting.<br>Thats it.
 </p>
     <br><br>
-   <div class="scene">
-  <div class="forest">
+   <div class="scene hidden">
+  <div class="forest hidden">
     <div class="tree tree1">
       <div class="branch branch-top"></div>
       <div class="branch branch-middle"></div>
@@ -231,7 +233,7 @@
     </div>
   </div>
   
-  <div class="tent">
+  <div class="tent hidden">
       <div class="roof"></div>
       <div class="roof-border-left">
         <div class="roof-border roof-border1"></div>
@@ -248,12 +250,12 @@
       </div>
     </div>
 
-  <div class="floor">
+  <div class="floor hidden">
       <div class="ground ground1"></div>
       <div class="ground ground2"></div>
     </div>
   
-  <div class="fireplace">
+  <div class="fireplace hidden">
     <div class="support"></div>
     <div class="support"></div>
     <div class="bar"></div>
@@ -279,7 +281,7 @@
     </div>
   </div>
   
-  <div class="time-wrapper">
+  <div class="time-wrapper hidden">
     <div class="time">
       <div class="day"></div>
       <div class="night">
@@ -295,6 +297,7 @@
     </div>
   </div>
 </div>
+    
 </div>
     <div class="sign_img">
         <img src="images/class_demo.png" class="shadow" height="90%" width="70%" style="margin-top: -35%">
@@ -466,6 +469,7 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+    <a id="demo"></a>
 <br>
 
 <!-- The dots/circles -->
