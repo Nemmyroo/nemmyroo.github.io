@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Class Chat Website Learn More</title>
+    <link rel="stylesheet" href="style_A_U.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body onload="plusSlides2(1)">
+    <nav>
+        <a href="index.html" class="scale"><img src="images/logo.png" height="auto" width ="40%" style="border-radius: 0;"></a>
+        <div class="navigations">
+            <ul>
+                <li><a href="index.html" class="navigations">Home</a></li>
+                <li><a href="" class="navigations">Intergrations</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="mission">
+        <div>
+            <p style="font-size: 2.7vmax; color: #0145e4"><b>OUR MISSION</b></p><br>
+        <p style="font-size: 1.5vmax">We founded Class Chat with a mission to connect students, staff, and parents with each other, giving them opprotunities to safely and positively interact with each other, and stay informed.</p>
+        </div>
+        <div>
+        <img src="images/class_demo.png">
+        </div>
+    </section>
+    <section class="team">
+        <div class="indv">
+            <p class="heading_s">Team Players</p><br>
+            <p class="text_s">We are a diverse group of people with experience being students, staff members, technologists and now founders. </p>
+        </div>
+        <div class="indv">
+            <p class="heading_s">Modernity for the better</p><br>
+            <p class="text_s">We brought together a blend of modern software that makes your life easier, with a focus on keeping your campus secure.</p>
+        </div>
+        <div class="indv">
+            <p class="heading_s">Receptiveness</p><br>
+            <p class="text_s">We are all about innovating and creating good software around our users and their needs. Feel free to reach out for any ideas and suggestions.</p>
+        </div>
+    </section>
+    <section class="partners">
+    <div class="part_text">
+        <p style="font-size: 2vmax; color: #0145e4;">Our Partners/Clients</p><br><br>
+        <a href=""><button class="button_2" style="margin-left: -5px">See our full list of partners!</button></a>
+    </div>
+    <div class="slideshow-container2">
+        <div class="mySlides2 fade">
+            <div class="text">
+                <div>
+                    <h5 class="category"> Programs </h5>
+                    <div class="side">
+                <img src="images/sunstone_logo.png" height="auto" width="40%" style="border-radius: 0">
+                    <img src="images/LBlogo1.png" height="auto" width="40%" style="border-radius: 0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides2 fade">
+            <div class="text">
+                <div>
+                    <h5 class="category"> Schools </h5>
+                    <div class="side">
+                    <img src="images/CSULB.png" height="auto" width="20%" style="border-radius: 0">
+                    <img src="images/AUHSD2.png" height="auto" width="22%" style="border-radius: 0">
+                    <img src="images/cambridge_logo.png" height="auto" width="20%" style="border-radius: 0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mySlides2 fade">
+            <div class="text">
+                <div>
+                    <h5 class="category"> Companies </h5>
+                    <div class="side">
+                    <img src="images/AUHSD.png" height="auto" width="18%" style="border-radius: 0">
+                    <img src="images/canvas.png" height="auto" width="15%" style="border-radius: 0">
+                    <img src="images/google.png" height="auto" width="20%" style="border-radius: 0">
+                    <img src="images/logo3.png" height="auto" width="18%" style="border-radius: 0">
+                    </div>
+                </div>                </div>
+            </div>
+        <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+        <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+    </div>
+    </section>
+    <section class="review">
+        <!-- &#x2713 !-->
+        <p style="font-size: 1.6vmax;">Here is what our users have to say about Class Chat!</p>
+        <br>
+        <ul style="list-style-type: none;">
+            <li>&#x2713 Filler text</li>
+            <li>&#x2713 Filler text</li>
+            <li>&#x2713 Filler text</li>
+        </ul>
+    </section>
+    <section class="r_boxes">
+        <div class="box">
+            <p>“All base UI elements are made using Nested Symbols and shared styles that are logically connected. Gorgeous, high-quality video sharing on desktop, mobile, tablet. All base UI elements are made using Nested Symbols”</p>
+            <img src="images/placeholder.png" class="circle">
+            <br><br>
+            <p>Name Surname</p>
+            <p>Description</p>
+        </div>
+        <div class="box">
+            <p>“All base UI elements are made using Nested Symbols and shared styles that are logically connected. Gorgeous, high-quality video sharing on desktop, mobile, tablet. All base UI elements are made using Nested Symbols”</p>
+            <img src="images/placeholder.png" class="circle">
+            <br><br>
+            <p>Name Surname</p>
+            <p>Description</p>
+        </div>
+        <div class="box">
+            <p>“All base UI elements are made using Nested Symbols and shared styles that are logically connected. Gorgeous, high-quality video sharing on desktop, mobile, tablet. All base UI elements are made using Nested Symbols”</p>
+            <img src="images/placeholder.png" class="circle">
+            <br><br>
+            <p>Name Surname</p>
+            <p>Description</p>
+        </div>
+    </section>
+    <section class="bottom_nav">  <!-- Link Navigation at the bottom of the page-->
+        <div>
+            <a href=""><img src="images/logo.png" width="100px" height="100px" style="border-radius: 0"></a>
+        </div>
+        <div class="link">
+            <h2>Homepage</h2>
+            <br><br><br>
+            <a href="#demo" class="link">Demo</a><br><br>
+            <a href="#our_product" class="link">Our Product</a><br><br>
+            <a href="#login_process" class="link">Login Process</a><br><br>
+            <a href="#testimonials" class="link">Testimonials</a><br><br>
+        </div>
+        <div class="link">
+        <h2>About</h2>
+        <br><br><br>
+            <a href="" class="link">About us</a><br><br>
+            <a href="" class="link">Teachers</a><br><br>
+            <a href="" class="link">Students</a><br><br>
+            <a href="" class="link">Parents</a><br><br>
+        </div>
+        <div class="link">
+        <h2>Support</h2>
+        <br><br><br>
+            <a href="" class="link">Privacy Policy</a><br><br>
+            <a href="" class="link">Responisble Disclosure</a><br><br>
+            <a href="" class="link">Terms & Conditions</a><br><br>
+            <a href="" class="link">Contact Us</a><br><br>
+        </div>
+    </section>
+    <section class="copyright">
+    <div class="copy">
+    <div>
+        <h5 style="color: black">Created by Damian Figueroa :)</h5>
+        <h5>Copyright &copy; 2023 Class Chat Inc. All rights reserved.</h5>
+    </div>
+    <div >
+        <a href="" class="link">Terms & Conditions</a><br><br>
+        <a href="" class="link">Privacy Policy</a>
+    </div>
+    </div>
+</section>
+</body>
+</html>
