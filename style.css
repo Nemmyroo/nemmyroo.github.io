@@ -50,6 +50,9 @@ h1 {    color: #000;
     letter-spacing: -0.02vh;
 }
 
+p{
+    font-size: 1.6vh;
+}
 .box {
     width: 45%;
 }
