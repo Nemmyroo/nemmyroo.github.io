@@ -18,18 +18,21 @@ blue {
 
 .navbar-light .navbar-nav .nav-link {
     color: #0041dd;
-    font-size: 1.2rem;
+    font-size: 2.5vh;
+    font-weight: 700;
 }
 
 .btn-primary {
     color: #fff;
     background-color: #0041dd;
     border-color: #0041dd;
+    font-size: 2.5vh;
 }
 
 .btn-outline-primary {
     color: #0041dd;
     border-color: #0041dd;
+    font-size: 2.5vh;
 }
 
 .navbar .active {
@@ -39,12 +42,12 @@ blue {
 
 h1 {    color: #000;
     font-family: Inter;
-    font-size: 3.4375rem;
+    font-size: 6vh;
     font-style: normal;
     font-weight: 700;
-    line-height: 111.667%;
+    line-height: 110%;
     /* 3.83856rem */
-    letter-spacing: -0.17188rem;
+    letter-spacing: -0.02vh;
 }
 
 .box {
@@ -76,16 +79,17 @@ h1 {    color: #000;
 }
 
 .button-1{
-    width: 40%;
+    width: 35%;
     text-align: center;
     border-radius: 30px;
     border: none;
     padding: 2.5% 2%;
-    font-size: 1.2rem;
+    font-size: 2.5vh;
     color: white;
     background-color: #0041dd;
     box-shadow: 2px 2px 10px rgba(99, 96, 96, 0.502);
-    transition: all ease-in 0.6s;
+    transition: all ease-in 0.3s;
+    font-weight: 800;
 }
 
 .button-1:hover{
@@ -97,16 +101,17 @@ h1 {    color: #000;
 }
 
 .button-2{
-    width: 40%;
+    width: 35%;
     text-align: center;
     border-radius: 30px;
     color: #0041dd;
     border-color: #0041dd;
     padding: 2.5% 2%;
-    font-size: 1.2rem;
+    font-size: 2.5vh;
     font-weight: 500;
-    transition: all ease-in 0.6s;
+    transition: all ease-in 0.3s;
     box-shadow: 2px 2px 10px rgba(99, 96, 96, 0.502);
+    font-weight: 700;
 }
 
 .button-2:hover{
@@ -129,7 +134,7 @@ a{
 
 .bh{
     text-align: center;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.5vh;
     font-weight: 300;
 }
 
