@@ -1,4 +1,4 @@
-body{
+body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(0, 75, 255, 0.16) 33.3%, rgba(179, 78, 230, 0.16) 66.59%, rgba(1, 160, 230, 0.16) 99.89%);
 }
 
@@ -40,7 +40,8 @@ blue {
     font-weight: 700;
 }
 
-h1 {    color: #000;
+h1 {
+    color: #000;
     font-family: Inter;
     font-size: 6vh;
     font-style: normal;
@@ -50,9 +51,18 @@ h1 {    color: #000;
     letter-spacing: -0.02vh;
 }
 
-p{
+p {
     font-size: 1.6vh;
 }
+
+h2 {
+    font-size: 2.8vh;
+}
+
+h3{
+    font-size: 2.3vh;
+}
+
 .box {
     width: 45%;
 }
@@ -62,26 +72,32 @@ p{
     margin-bottom: 10%;
 }
 
-.shadow_1{
+.shadow_1 {
     filter: drop-shadow(-30px 30px 10px rgba(99, 96, 96, 0.502));
     transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-	img { width: 100%; height: auto; }
+    animation: float 6s ease-in-out infinite;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-40px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-40px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
 }
 
-.button-1{
+.button-1 {
     width: 35%;
     text-align: center;
     border-radius: 30px;
@@ -95,7 +111,7 @@ p{
     font-weight: 800;
 }
 
-.button-1:hover{
+.button-1:hover {
     scale: 1.1;
     color: #0041dd;
     background-color: white;
@@ -103,7 +119,7 @@ p{
     box-shadow: 2px 10px 10px rgba(99, 96, 96, 0.502);
 }
 
-.button-2{
+.button-2 {
     width: 35%;
     text-align: center;
     border-radius: 30px;
@@ -117,7 +133,7 @@ p{
     font-weight: 700;
 }
 
-.button-2:hover{
+.button-2:hover {
     scale: 1.1;
     color: #0041dd;
     background-color: white;
@@ -125,23 +141,23 @@ p{
     box-shadow: 2px 10px 10px rgba(99, 96, 96, 0.502);
 }
 
-.partners img{
+.partners img {
     width: 150px;
     height: auto;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.bh{
+.bh {
     text-align: center;
     letter-spacing: 0.5vh;
     font-weight: 300;
 }
 
-.bot-sec{
+.bot-sec {
     margin-top: 3%;
     justify-content: center;
     column-gap: 25%;
