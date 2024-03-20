@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Chat</title>
+    <link rel="website icon" type="png" href="images/logo.png">
+
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
@@ -26,16 +28,16 @@
 
 <body>
     <!-- Navigation Heading -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between sticky-top">
         <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" width="55vw;" height="55vw;" alt="Class Chat">
+            <img src="images/logo.png" width="50rem;" height="50rem;" alt="Class Chat">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto nav-fill w-100">
+            <ul class="navbar-nav mr-auto " style="column-gap: 2.6vw;">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Class Chat <span class="sr-only">(current)</span></a>
                 </li>
@@ -57,38 +59,35 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Our Customers</a>
                 </li>
-                <li class="nav-item">
-                    <nav class="nav-item">
-                        <form class="navbar-right">
-                            <button class="btn btn-outline-primary" type="button">Log in</button>
-                            <button class="btn btn-primary" type="button">Book A Demo</button>
-                        </form>
-                    </nav>
-                </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0" style="column-gap: 1.5vw;">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="button">Log in</button>
+                <button class="btn btn-primary my-2 my-sm-0" type="button"><b>Book A Demo</b></button>
+            </form>
         </div>
     </nav>
-    <div class="main" style="margin: 5% 10%;">
+    <div class="main" style="margin: 3% 12% 5% 12%;">
         <!-- Section 1 -->
-        <div class="d-flex">
+        <div class="d-flex" style="column-gap: 15%;">
             <div class="box">
                 <div>
-                    <h1 style="margin-bottom: 5%;">Made for Admins.</h1>
-                    <h1 style="margin-bottom: 5%;">
-                        <blue>Built by <u>Students</u>.</blue>
+                    <h1 style="margin-bottom: 2%;">Made for Admins.</h1>
+                    <h1 style="margin-bottom: 2%;">
+                        <blue>Built by <u>Students</u><secret onclick="secret()">.</secret></blue>
                     </h1>
                 </div>
                 <br>
-                <h2 style="margin-bottom: 6%;">Class Chat connects all of your campus and classes into one place.
+                <h3 style="margin-bottom: 6%;">Class Chat connects all of your campus and classes into one place.
                     Whether you want to reach <blue>1
                         student or 100,000, do it instantly.</blue>
-                </h2>
-                <div class="d-flex">
+                </h3>
+                <div class="d-flex" style="margin-bottom: 6%; column-gap: 3.5rem;">
                     <button class="button-1"><a href="#">Book a Demo</a></button>
                     <button class="button-2"><a href="#">Learn more</a></button>
                 </div>
-                <div id="carouselExampleIndicators2" class="carousel slide " data-ride="carousel">
-                    <ol class="carousel-indicators">
+                <div id="carouselExampleIndicators2" class="carousel slide " data-ride="carousel"
+                    style="margin-bottom: 2vw;">
+                    <ol class="carousel-indicators" style="margin-top: 50%;">
                         <li data-target="#carouselExampleIndicators2" style="background-color: #0041dd;"
                             data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators2" style="background-color: #0041dd;"
@@ -110,7 +109,7 @@
                                 <b>-Michael Solt.<br>
                                     Dean of College of Business at CSULB</b>
                             </p>
-                            <img src="images/solt.png" style="border-radius: 90px;" height="10%" width="10%">
+                            <img src="images/solt.png" style="border-radius: 90px;" height="80rem" width="70rem">
                         </div>
                         <div class="carousel-item">
                             <p>“Class Chat is a promising tool for facilitating effective communication and
@@ -125,7 +124,7 @@
                                 <b>-Michael Solt.<br>
                                     Dean of College of Business at CSULB</b>
                             </p>
-                            <img src="images/solt.png" style="border-radius: 90px;" height="10%" width="10%">
+                            <img src="images/solt.png" style="border-radius: 90px;" height="80rem" width="70rem">
                         </div>
                         <div class="carousel-item">
                             <p>“Class Chat is a promising tool for facilitating effective communication and
@@ -140,19 +139,19 @@
                                 <b>-Michael Solt.<br>
                                     Dean of College of Business at CSULB</b>
                             </p>
-                            <img src="images/solt.png" style="border-radius: 90px;" height="10%" width="10%">
+                            <img src="images/solt.png" style="border-radius: 90px;" height="80rem" width="70rem">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="box">
-                <img src="images/phone_w.png" class="shadow_1" height="100%" width="100%">
+                <img src="images/phone_w.png" class="shadow_1" height="90%" width="90%">
             </div>
         </div>
         <!-- Carousel with a few reviews-->
 
         <!-- line of partners -->
-        <div class="d-flex" style="margin-bottom: 5%;">
+        <div class="d-flex" style="margin-bottom: 1%; column-gap: 10%;">
             <div class="partners">
                 <img src="images/school_logos/hw.png" alt="HW">
             </div>
@@ -174,77 +173,82 @@
                 <img src="images/phone_demo_1.png" width="80%">
             </div>
             <div class="box">
-                <h1 style="margin: 10% 0 15% 0;">Admins, reach <blue>more</blue> students.
+                <h2 style="margin: 5% 0 15% 0;">Admins, reach <blue>more</blue> students.
                     <blue>Faster</blue>.
-                </h1>
+                </h2>
                 <h3 style="margin-bottom: 15%;">Stop sending emails no one reads or sees. Engage with your student body
-                    instantly using Class Chat.
-                    Just sign in and you're ready to go. No set up needed.</h3>
-                <button class="button-1" style="height: 10%;"><a href="#">Book a Demo</a></button>
+                    instantly using Class Chat. Just sign in and you're ready to go. No set up needed.<b> Spread your
+                        message with Class Chat.</b></h3>
+                <button class="button-1" style="height: 3vw;"><a href="#">Book a Demo</a></button>
             </div>
         </div>
-        <div class="d-flex" style="margin-top: -8%;">
+        <div class="d-flex">
             <div class="box">
-                <h1 style="margin: 15% 0 15% 0;">Teachers, improve students grades. <blue>Instantly</blue>.
-                </h1>
-                <h3 style="margin-bottom: 15%;">Class Chat comes with features that have been proven to have a
-                    significant effect on GPAs and student well being, while requiring no additional effort from you.
+                <h2 style="margin: 15% 0 15% 0;">Teachers, improve students grades. <blue>Instantly</blue>.
+                </h2>
+                <h3 style="margin-bottom: 15%;">Class Chat comes with features that have a significant increase effect
+                    on GPAs and student well being,<b> while requiring no additional effort from you.</b>
                 </h3>
                 <div class="d-flexe">
                     <div>
-                        <h3> Learn more about our <b><a href="#">
-                                    <blue>Features</blue>
+                        <h3> <b>Learn more about our<a href="#">
+                                    <blue>Features!</blue>
                                 </a></b></h3>
                     </div>
+                    <!--
                     <div>
                         <button class="button-1"><a href="#">Features</a></button>
                     </div>
+                    -->
                 </div>
             </div>
-            <div class="box mx-auto d-block" style="align-content: center; padding-left: 8%;">
+            <div class="box mx-auto d-block" style="align-content: center; padding-left: 8%; margin-top: -15%">
                 <img src="images/phone_demo_2.png" width="80%">
             </div>
         </div>
-        <div class="d-flex" style="margin-top: -8%;">
-            <div class="box mx-auto d-block" style="align-content: center; padding-left: 8%;">
+        <div class="d-flex">
+            <div class="box mx-auto d-block" style="align-content: center; padding-left: 8%; margin-top: 0%">
                 <img src="images/phone_demo_3.png" width="80%">
             </div>
             <div class="box">
-                <h1 style="margin: 15% 0 15% 0;">Students, say <blue>goodbye</blue> to <blue>email threads</blue> and
+                <h2 style="margin: 15% 0 12% 0;">Students, say <blue>goodbye</blue> to <blue>email threads</blue> and
                     <blue>planners</blue>.
-                </h1>
-                <h3 style="margin-bottom: 15%;">Class Chat will send you reminders and display when your work is coming
-                    up. Class Chat will also let you talk to your classmates about school, class, and anything else you
-                    want.</h3>
-                <h3>Learn more about how <b>
+                </h2>
+                <h3 style="margin-bottom: 2vw;">Class Chat will <blue>automatically</blue> send you reminders and
+                    display when your
+                    work is due. Class Chat will also let you talk to your classmates about school, class, and anything
+                    else you want, keeping you on your A-game.</h3>
+                <h3><b>Learn more about how
                         <blue><a href="#">Class Chat can get you better grades!</a></blue>
                     </b></h3>
             </div>
         </div>
-        <h1 class="bh">We make a <blue><u><b>real difference.</b></u></blue>
-        </h1>
-        <blue>
-            <div class="d-flex bot-sec">
-                <div>
-                    <h2>30,000</h2>
-                    <p>Our largest Client hosts 30,000 students.</p>
+        <div style="margin: 5% 0">
+            <h1 class="bh">We make a <blue><u><b>real difference.</b></u></blue>
+            </h1>
+            <blue>
+                <div class="d-flex bot-sec">
+                    <div>
+                        <h3>30,000</h3>
+                        <p>Our largest Client hosts 30,000 students.</p>
+                    </div>
+                    <div>
+                        <h3>95%</h3>
+                        <p>of students say Class Chat makes them feel more connected to their classmates</p>
+                    </div>
+                    <div>
+                        <h3>1 hour</h3>
+                        <p>to onboard over 90% of students at a campus</p>
+                    </div>
                 </div>
-                <div>
-                    <h2>95%</h2>
-                    <p>of students say Class Chat makes them feel more connected to their classmates</p>
-                </div>
-                <div>
-                    <h2>1 hour</h2>
-                    <p>to onboard over 90% of students at a campus</p>
-                </div>
-            </div>
-        </blue>
-        <div class="d-flex">
+            </blue>
+        </div>
+        <div class="d-flex" style="column-gap: 10%;">
             <div class="box">
                 <img src="images/phone_w.png" class="shadow_1" height="100%" width="100%">
             </div>
             <div id="carouselExampleIndicators" class=" box carousel slide " data-ride="carousel">
-                <ol class="carousel-indicators" style="height: 15vw;">
+                <ol class="carousel-indicators" style="height: 15vw; ">
                     <li data-target="#carouselExampleIndicators" style="background-color: #0041dd;" data-slide-to="0"
                         class="active"></li>
                     <li data-target="#carouselExampleIndicators" style="background-color: #0041dd;" data-slide-to="1">
@@ -269,7 +273,7 @@
                                 Cypress High School
                             </b>
                         </p>
-                        <img src="images/brown.png" style="border-radius: 90px;" height="10%" width="10%">
+                        <img src="images/brown.png" style="border-radius: 90px;" height="80rem" width="80rem">
                     </div>
                     <div class="carousel-item">
                         <p>"The teachers really appreciated the option of using Class Chat and many use it on a regular
@@ -287,7 +291,7 @@
                                 Cypress High School
                             </b>
                         </p>
-                        <img src="images/brown.png" style="border-radius: 90px;" height="10%" width="10%">
+                        <img src="images/brown.png" style="border-radius: 90px;" height="80rem" width="80rem">
                     </div>
                     <div class="carousel-item">
                         <p>"The teachers really appreciated the option of using Class Chat and many use it on a regular
@@ -305,13 +309,17 @@
                                 Cypress High School
                             </b>
                         </p>
-                        <img src="images/brown.png" style="border-radius: 90px;" height="10%" width="10%">
+                        <img src="images/brown.png" style="border-radius: 90px;" height="80rem" width="80rem">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <script>
+        function secret(){
+            alert("Created by Damian Figueroa :D");
+        }
+    </script>
 </body>
 
 </html>
