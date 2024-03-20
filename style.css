@@ -1,5 +1,6 @@
 body {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(0, 75, 255, 0.16) 33.3%, rgba(179, 78, 230, 0.16) 66.59%, rgba(1, 160, 230, 0.16) 99.89%);
+    font-family: Inter;
 }
 
 blue {
@@ -18,7 +19,7 @@ blue {
 
 .navbar-light .navbar-nav .nav-link {
     color: #0041dd;
-    font-size: 1.5vw;
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
@@ -26,13 +27,14 @@ blue {
     color: #fff;
     background-color: #0041dd;
     border-color: #0041dd;
-    font-size: 1.5vw;
+    font-size: 1.1rem;
 }
 
 .btn-outline-primary {
     color: #0041dd;
-    border-color: #0041dd;
-    font-size: 1.5vw;
+    border-color: transparent;
+    font-size: 1.1rem;
+    font-weight: 700 !important;
 }
 
 .navbar .active {
@@ -43,33 +45,40 @@ blue {
 h1 {
     color: #000;
     font-family: Inter;
-    font-size: 3.5vw;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
     /* 3.83856rem */
-    letter-spacing: -0.02vh;
+    letter-spacing: -0.01rem;
 }
 
-p {
-    font-size: 0.9vw;
+p{
+    font-size: 1rem;
 }
 
 h2 {
-    font-size: 1.5vw;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    /* 3.83856rem */
+    letter-spacing: -0.01rem;
 }
 
-h3{
-    font-size: 1.3vw;
+h3 {
+    font-size: 1.4rem;
 }
 
+h4{
+    font-size: 1.35rem;
+}
 .box {
     width: 45%;
 }
 
 .d-flex {
-    column-gap: 10%;
-    margin-bottom: 10%;
+    column-gap: 2%;
 }
 
 .shadow_1 {
@@ -89,7 +98,7 @@ h3{
     }
 
     50% {
-        transform: translatey(-2vw);
+        transform: translatey(-1.5rem);
     }
 
     100% {
@@ -98,13 +107,13 @@ h3{
 }
 
 .button-1 {
-    width: 35%;
+    width: 12rem;
     height: 20%;
     text-align: center;
-    border-radius: 1vw;
+    border-radius: 1.5rem;
     border: none;
     padding: 2.5% 2%;
-    font-size: 1.5vw;
+    font-size: 1.1rem;
     color: white;
     background-color: #0041dd;
     box-shadow: 2px 2px 10px rgba(99, 96, 96, 0.502);
@@ -121,20 +130,20 @@ h3{
 }
 
 .button-2 {
-    width: 35%;
+    width: 12rem;
     height: 20%;
     text-align: center;
-    border-radius: 1.5vw;
+    border-radius: 1.5rem;
     color: #0041dd;
     border-color: #0041dd;
-    padding: 2.5% 2%;
-    font-size: 1.5vw;
+    padding: 2.2% 2%;
+    font-size: 1.1rem;
     font-weight: 500;
     transition: all ease-in 0.3s;
     box-shadow: 2px 2px 10px rgba(99, 96, 96, 0.502);
     font-weight: 700;
-    border-width: 0.15vw;
-    
+    border-width: 0.2rem;
+
 }
 
 .button-2:hover {
@@ -146,7 +155,7 @@ h3{
 }
 
 .partners img {
-    width: 10vw;
+    width: 9vw;
     height: auto;
 }
 
@@ -157,17 +166,37 @@ a {
 
 .bh {
     text-align: center;
-    letter-spacing: 0.5vh;
-    font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    font-size: 5rem;
 }
 
 .bot-sec {
     margin-top: 3%;
     justify-content: center;
-    column-gap: 25%;
+    column-gap: 15%;
 }
 
+.bot-sec p{
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.bot-sec div{
+    width: 25%;
+}
+
+.bot-sec h3{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+}
 .carousel-indicators li {
-    width: 3vw;
-    height: 0.5vw;
+    width: 2rem;
+    height: 0.5rem;
+}
+
+.carousel-item p{
+    font-size: 1rem;
 }
