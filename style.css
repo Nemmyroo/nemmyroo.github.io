@@ -1,6 +1,6 @@
+
 body {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(0, 75, 255, 0.16) 33.3%, rgba(179, 78, 230, 0.16) 66.59%, rgba(1, 160, 230, 0.16) 99.89%);
-    font-family: Inter;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 blue {
